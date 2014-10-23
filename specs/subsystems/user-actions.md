@@ -84,20 +84,54 @@ Other notes about the UI
 - It should be possible to undo records
     - But not too easy to undo something by mistake
 
+Synchronization
+---------------
+
+It would be great if apps could work offline.
+To keep it simple, the initial version will require internet,
+and depend on the central server of the RESTful API.
+
+Future releases can introduce the notion of local caching
+and implement synchronization between clients and server.
+
+Positive and negative activities
+--------------------------------
+
+Some activities are positive in nature:
+
+- Went to the gym
+- Washed the dishes
+- ...
+
+Others are negative:
+
+- Had beers
+- Watched TV series
+- ...
+
+TODO: should we distinguish and features that encourage positive activities?
+(See https://habitrpg.com for inspiration maybe)
+
+Alerts and recurring activities
+-------------------------------
+
+It might be interesting to set periodic alerting for some activities.
+For example, you should go to the gym at least once a week.
+The alert doesn't have to be a real alarm (but it can be).
+It can simply pop up in the view as a *suggestion*.
+Being in the view would also give an easy way to record the activity (no need to type, etc).
+
+The opposite also makes sense for negative activities:
+you should not go to the pub more than once a week.
+
+TODO: should we add features for this, and how exactly should it work?
+
 TODO
 ----
 
 Some possible features I haven't decided about adding or leaving out?
 
-- How to deal with positive and negative activities?
-    - Should we distinguish?
-
 - Would it make sense to add gamification in some way?
     - If yes, how, exactly?
-
-- How about adding alerts if you've neglected some important activity for a long time?
-    - For example, if an activity should be periodic, for example weekly,
-      it can be nice if it becomes visible on the screen at the beginning
-      of a new week so you don't forget to do it,
-      and to make it easy to record it.
+    - See https://habitrpg.com for inspiration maybe. Any others?
 
