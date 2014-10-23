@@ -10,7 +10,7 @@ Overview
 
 The main features:
 
-- Record activities + timestamp + gps, as if entered in a paper diary
+- Record activities + timestamp + gps, as if entered manually in a paper diary
 - View recorded activities:
     - list of activities per time period: day / week / month / year / all
     - count of activities per time period: day / week / month / year / all
@@ -25,6 +25,12 @@ Nice to have features / things to add later:
     - Option to select custom skin per tag (work / health / home / friends)
 - View recorded activities on a map
 - View nicely formatted report / send by email
+
+The implementation will be centered around a RESTful API.
+The idea is that anything can be implemented on top of a solid RESTful API:
+mobile apps, web apps, command line clients.
+(Btw, for fast prototyping in the beginning,
+a command line client or web client might be the best.)
 
 What is an activity?
 --------------------
@@ -64,57 +70,34 @@ For example the above ideas with short names to use in the app:
 - Gym -- Went to the gym to work out / zumba
 - Running -- Went running
 - Stairs -- Took the stairs
-- Washed the dishes
-- Cleaned the bathroom
-- Cooked vs eat at restaurant
-- Ate at McDonald's
-- Studied vocabulary with Anki
+- Dishes -- Washed the dishes
+- Bathroom -- Cleaned the bathroom
+- Cooked -- Cooked vs eat at restaurant
+- McDonald's -- Ate at McDonald's
+- Anki -- Studied vocabulary with Anki
 
-Activities, habits
-------------------
+Other notes about the UI
+------------------------
 
-An activity or habit has a short name.
+- It should be easy to record recurring activities
+    - But not too easy to record something by mistake
+- It should be possible to undo records
+    - But not too easy to undo something by mistake
 
-- [+] button to record activity easily, with visual feedback and buzz
-- possible to undo, but carefully, or add also undo-undo
-- option to pop-up confirmation on recording
-- date and time is recorded with activity
-- count of activity is shown, where count can be:
-    - count for today / this week / this month / this year
-    - maybe different color for time unit
-    - default count unit
-    - customizable count per activity
-    - activities can be grouped
-    - pills UI to toggle weekly / monthly / daily activities
+TODO
+----
 
-Periodicity
------------
+Some possible features I haven't decided about adding or leaving out?
 
-Activities can have a periodicity:
+- How to deal with positive and negative activities?
+    - Should we distinguish?
 
-- daily, examples:
-    - climbed stairs
-    - 20 pushups
-    - power yoga
+- Would it make sense to add gamification in some way?
+    - If yes, how, exactly?
 
-- weekly, examples:
-    - went to gym
-    - wiped the dust
-    - vacuumed
-    - took out trash
-    - awake at midnight
-    - cooked
-
-- monthly, examples:
-    - went to gym
-
-- yearly, examples:
-    - went to gym
-    - went to snowboard
-    - went to beach
-
-The periodicity controls the counter's behavior:
-counter resets when a new cycle begins.
-
-Also controls the plotting. (How, exactly?...)
+- How about adding alerts if you've neglected some important activity for a long time?
+    - For example, if an activity should be periodic, for example weekly,
+      it can be nice if it becomes visible on the screen at the beginning
+      of a new week so you don't forget to do it,
+      and to make it easy to record it.
 
