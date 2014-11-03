@@ -17,9 +17,19 @@ The main features:
     - easy switch between time periods: next / prev buttons
     - option to select start date + end date / now
 
+Personal goals: this app can help you to ... :
+
+- lose weight
+- eat healthier
+- drink less alcohol
+- ...
+
+In settings, you can enter *personal goals*,
+which add more indicators to help you track your progress.
+
 Nice to have features / things to add later:
 
-- Synchronize between multiple devices
+- Synchronize between devices
 - Add tags on activities:
     - Group by tags in the various views
     - Option to select custom skin per tag (work / health / home / friends)
@@ -87,9 +97,9 @@ Other notes about the UI
 Synchronization
 ---------------
 
-It would be great if apps could work offline.
-To keep it simple, the initial version will require internet,
-and depend on the central server of the RESTful API.
+To keep it simple, the first release will need internet,
+to talk to the central server of the RESTful API,
+and eliminate the need of synchronization.
 
 Future releases can introduce the notion of local caching
 and implement synchronization between clients and server.
@@ -109,8 +119,11 @@ Others are negative:
 - Watched TV series
 - ...
 
-TODO: should we distinguish and features that encourage positive activities?
-(See https://habitrpg.com for inspiration maybe)
+One way to distinguish these activities is by using tags.
+
+Another way will be using the *impact* value with personal goals.
+
+TODO: see https://habitrpg.com for more inspiration, maybe.
 
 Alerts and recurring activities
 -------------------------------
