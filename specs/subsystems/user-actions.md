@@ -86,6 +86,27 @@ For example the above ideas with short names to use in the app:
 - McDonald's -- Ate at McDonald's
 - Anki -- Studied vocabulary with Anki
 
+Personal goals
+--------------
+
+You can set one or more from a list of built-in *personal goal options*.
+
+When you have selected some personal goals,
+then every time you record an activity,
+you have the option to enter the *impact level* of your action for each personal goal.
+
+For example, if your personal goal is to lose weight,
+then when you enter an activity,
+you can select from 3 funny images to indicate the impact:
+
+1. "Fat picture" to indicate the activity was *bad*, like eating snacks at midnight
+2. "Normal picture" to indicate the activity was neither bad nor good
+3. "Sexy picture" to indicate the activity was *good*, like running
+
+Having multiple personal goals at the same time should be rare, but possible.
+The app will allow at most 3.
+It's critical to have cool impact level indicator UI.
+
 Other notes about the UI
 ------------------------
 
