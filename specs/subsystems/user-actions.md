@@ -160,6 +160,13 @@ you should not go to the pub more than once a week.
 
 TODO: should we add features for this, and how exactly should it work?
 
+Difference from HabitRPG
+------------------------
+
+- It's too much fun, which can be distracting
+- It's too game-like, and may not look serious
+- ...
+
 TODO
 ----
 
